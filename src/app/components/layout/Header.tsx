@@ -25,7 +25,7 @@ export const Header = () => {
       >
         <Box>
           <Heading size="lg">
-            <LinkWithAnimation href="/" color="primary.900">
+            <LinkWithAnimation href="/" color="white.900">
               Nicolas Ott
             </LinkWithAnimation>
           </Heading>
@@ -33,7 +33,7 @@ export const Header = () => {
 
         <ButtonGroup gap={2}>
           {Pages.map(([title, url]) => (
-            <LinkWithAnimation href={url} color="primary.900" key={title}>
+            <LinkWithAnimation href={url} color="white.900" key={title}>
               {title}
             </LinkWithAnimation>
           ))}

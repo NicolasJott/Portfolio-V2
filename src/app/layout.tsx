@@ -2,7 +2,6 @@ import { theme } from "@/theme";
 import { ColorModeScript } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import Main from "./components/layout/Main";
-import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {

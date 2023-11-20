@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import Footer from "./Footer";
 import { Header } from "./Header";
+import Footer from "@/app/components/layout/Footer";
 
 interface MainProps {
   children: ReactNode;
@@ -9,12 +9,12 @@ interface MainProps {
 
 const Main = ({ children }: MainProps) => {
   return (
-    <Box as="main" bg="white">
+    <Box as="main" bg="systemGrayDark.900">
       <Header />
       <Box pt={14} bg="" justifyContent="space-between">
         {children}
-        <Footer />
       </Box>
+        <Footer/>
     </Box>
   );
 };

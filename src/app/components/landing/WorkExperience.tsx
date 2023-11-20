@@ -10,20 +10,20 @@ import { JobCard } from "../cards/JobCard";
 
 export const WorkExperience = () => {
   return (
-    <Box mt={24}>
+    <Box p={4}>
       <Heading
-        color="primary.900"
+        color="white.900"
         textDecoration="underline"
         textUnderlineOffset={5}
-        textDecorationColor="accent.900"
+        textDecorationColor="primary.900"
         textDecorationThickness="4px"
         mb={8}
-        size="lg"
+        size="xl"
       >
         {workExperience.header}
       </Heading>
       <VerticalTimeline
-        lineColor="#387ac7"
+        lineColor="#007BFF"
         layout={"1-column-left"}
         animate={false}
       >
@@ -31,9 +31,8 @@ export const WorkExperience = () => {
           ({ title, company, date, description, img, url }, index) => (
             <VerticalTimelineElement
               key={index}
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "#90b5e0", color: "white" }}
-              contentArrowStyle={{ borderRight: "7px solid  ##90b5e0" }}
+              contentStyle={{ background: "#007BFF", color: "white", boxShadow: "none", borderRadius: "10px" }}
+              contentArrowStyle={{ borderRight: "7px solid  #007BFF" }}
               date={date}
               iconStyle={{
                 background: "#F5F5F5",

@@ -24,7 +24,6 @@ const Section = ({ children, delay = 0 }: SectionProps) => {
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={transitionOptions}
-      mb={6}
     >
       {children}
     </StyledDiv>

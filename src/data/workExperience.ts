@@ -47,8 +47,8 @@ export const workExperience: WorkExperience = {
       date: "May 2022 - December 2022",
       url: "https://www.bestbuy.com/site/services/geek-squad/pcmcat138100050018.c?id=pcmcat138100050018&PSRCH",
       description: [
-        "Consistently provided direct assistance to clients, utilizing a range of sophisticated troubleshooting techniques such as operating system repair, virus removal, and simple registry fixes. I have consistently delivered exceptional results in terms of resolving technical issues and restoring clients' devices to their optimal functionality.",
-        "Certified by Apple to diagnose and repair Apple devices such as the latest iPhones, Apple Watches, iPads, and Mac computers. This certification has enabled me to deliver reliable and efficient service, with a focus on high-quality repairs and support.",
+        "Consistently delivered direct client assistance, employing diverse troubleshooting techniques including OS repair, virus removal, and basic registry fixes. Achieved exceptional results in resolving technical issues and restoring devices to optimal functionality.",
+        "Apple-certified to diagnose and repair a range of Apple devices, including the latest iPhones, Apple Watches, iPads, and Mac computers. Delivering reliable, high-quality service focused on efficient repairs and support.",
         "I have demonstrated my exceptional teaching skills, working with clients who are seeking to learn how to use a computer effectively.",
         "my familiarity with computer BIOS, command line tools, and the Windows registry has allowed me to effectively troubleshoot and improve clients' devices, leading to enhanced performance and user experience.",
       ],

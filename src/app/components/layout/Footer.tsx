@@ -3,15 +3,13 @@
 import {
   Box,
   chakra,
-  Container,
+  Container, Link,
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
+  VisuallyHidden, VStack,
 } from "@chakra-ui/react";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaCodeBranch } from "react-icons/fa6";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -48,41 +46,15 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
-    <Box bg="primary.200" color="white">
-      <Container
-        as={Stack}
-        maxW={"6xl"}
-        py={4}
-        direction={{ base: "column", md: "row" }}
-        spacing={4}
-        justify={{ base: "center", md: "space-between" }}
-        align={{ base: "center", md: "center" }}
-      >
-        <Text>
-          © {new Date().getFullYear()} by Nicolas Ott. Created with Next.js and
-          Chakra UI.
+    <Box color="black">
+      <VStack spacing={2} align={"center"} py={6}>
+        <Text fontSize={16} textColor={"white"}>
+          © Nicolas Ott {new Date().getFullYear()}
         </Text>
-        <Stack direction={"row"} spacing={6}>
-          <SocialButton
-            label={"Github"}
-            href={"https://github.com/NicolasJott"}
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </SocialButton>
-          <SocialButton
-            label={"LinkedIn"}
-            href={"https://www.linkedin.com/in/nicolas-ott-892317226/"}
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </SocialButton>
-          <SocialButton
-            label={"Instagram"}
-            href={"mailto:njott@student.ysu.edu"}
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-          </SocialButton>
-        </Stack>
-      </Container>
+        <Link href={"https://github.com/NicolasJott/Portfolio-V2"}>
+        <FaCodeBranch size={16} color={"white"}/>
+        </Link>
+      </VStack>
     </Box>
   );
 }

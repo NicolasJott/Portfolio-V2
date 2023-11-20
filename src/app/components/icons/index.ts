@@ -1,0 +1,1 @@
+export { SocialsIcon } from "@/app/components/icons/SocialsIcon";

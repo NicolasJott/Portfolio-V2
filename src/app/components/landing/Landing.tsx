@@ -1,23 +1,41 @@
-import { landingData } from "@/data/landingData";
-import { Box, Heading, Text } from "@chakra-ui/react";
+"use client"
+import {landingData} from "@/data/landingData";
+import {Box, Heading, Text} from "@chakra-ui/react";
+import Typewriter from 'typewriter-effect';
+import {SocialsIcon} from "@/app/components/icons";
+
 
 export const Landing = () => {
-  return (
-    <Box>
-      <Heading
-        color="primary.900"
-        textDecoration="underline"
-        textUnderlineOffset={5}
-        textDecorationColor="accent.900"
-        textDecorationThickness="4px"
-        mb={4}
-        size="lg"
-      >
-        {landingData.header}
-      </Heading>
-      <Text color="text.900" fontSize={18}>
-        {landingData.description}
-      </Text>
-    </Box>
-  );
+    return (
+        <Box my={24} p={4}>
+
+            <Heading
+                color="white.900"
+                mb={4}
+                size="3xl"
+            >
+                {landingData.header1}
+            </Heading>
+            <Heading
+                color="white.900"
+                mb={4}
+                size="3xl"
+            >
+                {landingData.header2}
+            </Heading>
+            <Heading color="primary.900"
+                     mb={4}
+                     size="xl">
+                <Typewriter
+                    options={{
+                        strings: landingData.typeWriterText,
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
+            </Heading>
+            <SocialsIcon/>
+
+        </Box>
+    );
 };
