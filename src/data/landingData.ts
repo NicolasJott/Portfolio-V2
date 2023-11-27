@@ -1,7 +1,7 @@
 export const landingData = {
   header1: "Hi, I'm",
   header2: " Nicolas Ott",
-  typeWriterText: ["Software Engineer", "Web Developer", "Student"],
+  typeWriterText: ["Full Stack Engineer", "Student"],
   description:
     "I am currently a SWE Intern at Dev Youngstown where I develop MVPs for startup companies. I am currently a junior at Youngstown State University studying Computer Science.",
 };
