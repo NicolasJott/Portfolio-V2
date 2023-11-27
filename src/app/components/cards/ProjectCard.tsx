@@ -3,12 +3,14 @@ import {
   HStack,
   Heading,
   Image,
+  ResponsiveValue,
   Stack,
   Tag,
   TagLabel,
   Text,
   VStack,
 } from "@chakra-ui/react";
+import * as CSS from "csstype";
 import Link from "next/link";
 import { ReactElement } from "react";
 import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
@@ -32,20 +34,47 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
+  const textAlignConstants:
+    | ResponsiveValue<CSS.Property.TextAlign>
+    | undefined = ["center", "center", "center", "center", "right"];
   return (
     <Box w="100%" mb={[12, 24]}>
       <Stack
-        direction={["column", "row"]}
+        direction={["column", "column", "column", "row"]}
         spacing={12}
-        justifyContent={"space-between"}
+        justifyContent={"center"}
       >
-        <Image src={project.img} alt="pave routes route" maxWidth={"600px"} />
-        <VStack spacing={8} alignItems={["center", "flex-end"]}>
-          <VStack alignItems={["center", "flex-end"]}>
-            <Heading textColor={"white"} size={["md", "lg"]}>
+        <Image
+          src={project.img}
+          alt="pave routes route"
+          maxWidth={["250px", "250px", "350px", "400px", "600px"]}
+          alignSelf={"center"}
+        />
+        <VStack
+          spacing={8}
+          alignItems={["center", "center", "center", "center", "flex-end"]}
+          w={["100%", "100%", "100%", "80%", "80%", "20%"]}
+        >
+          <VStack
+            alignItems={[
+              "center",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+            ]}
+            w={"100%"}
+          >
+            <Heading
+              textColor={"white"}
+              size={["md", "lg"]}
+              textAlign={textAlignConstants}
+            >
               {project.name}
             </Heading>
-            <Text textColor={"white"}>{project.projectType}</Text>
+            <Text textColor={"white"} textAlign={textAlignConstants}>
+              {project.projectType}
+            </Text>
           </VStack>
           <Box
             bg={project.primaryColor}
@@ -53,11 +82,20 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             p={4}
             boxShadow={"dark-lg"}
           >
-            <Text textColor={"white"}>{project.description}</Text>
+            <Text textColor={"white"} textAlign={textAlignConstants}>
+              {project.description}
+            </Text>
           </Box>
           <HStack
             spacing={4}
-            justifyContent={["center", "flex-end"]}
+            justifyContent={[
+              "center",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+            ]}
+            w={"100%"}
             alignItems={"center"}
             flexWrap={"wrap"}
           >

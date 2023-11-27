@@ -94,7 +94,7 @@ const projects = (size: number, color: string): Project[] => [
 export default function Home() {
   return (
     <Layout title={"Projects"}>
-      <Container maxW={"60%"} mt={[12, 24]}>
+      <Container maxW={"90%"} mt={[12, 24]}>
         <Section delay={0.1}>
           <VStack>
             <Heading
@@ -106,7 +106,7 @@ export default function Home() {
             >
               Nicolas Ott - Projects
             </Heading>
-            {projects(20, "white").map((project, index) => (
+            {projects(16, "white").map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
           </VStack>
