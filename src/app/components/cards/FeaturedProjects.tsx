@@ -33,7 +33,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const FeaturedProjects = ({ project }: ProjectCardProps) => {
   const textAlignConstants:
     | ResponsiveValue<CSS.Property.TextAlign>
     | undefined = ["center", "center", "center", "center", "right"];

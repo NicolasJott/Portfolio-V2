@@ -1,2 +1,3 @@
+export { FeaturedProjects } from "./FeaturedProjects";
 export { JobCard } from "./JobCard";
-export { ProjectCard } from "./ProjectCard";
+export { OtherProjects } from "./OtherProjects";

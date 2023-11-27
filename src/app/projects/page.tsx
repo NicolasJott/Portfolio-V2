@@ -1,21 +1,25 @@
 import Layout from "@/app/components/layout/Layout";
-import { Container, Heading, VStack } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import { FaReact } from "react-icons/fa";
 import {
+  SiCss3,
   SiExpo,
   SiExpress,
   SiFastapi,
+  SiHtml5,
+  SiJavascript,
   SiMongodb,
   SiMysql,
   SiNestjs,
   SiNodedotjs,
   SiTypescript,
 } from "react-icons/si";
-import { ProjectCard } from "../components/cards";
-import { Project } from "../components/cards/ProjectCard";
+import { FeaturedProjects, OtherProjects } from "../components/cards";
+import { Project } from "../components/cards/FeaturedProjects";
+import { OtherProject } from "../components/cards/OtherProjects";
 import Section from "../components/layout/Section";
 
-const projects = (size: number, color: string): Project[] => [
+const featuredProjects = (size: number, color: string): Project[] => [
   {
     name: "Pave Routes",
     img: "images/pave.png",
@@ -66,13 +70,113 @@ const projects = (size: number, color: string): Project[] => [
       },
     ],
   },
+];
+
+const otherProjects = (size: number, color: string): OtherProject[] => [
   {
     name: "Nest.JS & MySQL restAPI Template",
-    img: "images/pave.png",
     description:
       "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
-    primaryColor: "#ed1543",
-    projectType: "Personal Project",
+    github: "https://github.com/NicolasJott/nest-mysql-template",
+    tags: [
+      {
+        name: "NestJS",
+        icon: <SiNestjs size={size} color={color} />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql size={size} color={color} />,
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Personal Portfolio V1",
+    description: "The first iteration of my personal portfolio.",
+    github: "https://github.com/NicolasJott/Personal-website",
+    website: "https://v1.nicolasjott.com/",
+    tags: [
+      {
+        name: "JavaScript",
+        icon: <SiJavascript size={size} color={color} />,
+      },
+      {
+        name: "HTML5",
+        icon: <SiHtml5 size={size} color={color} />,
+      },
+      {
+        name: "CSS3",
+        icon: <SiCss3 size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Nest.JS & MySQL restAPI Template",
+    description:
+      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
+    github: "https://github.com/NicolasJott/nest-mysql-template",
+    tags: [
+      {
+        name: "NestJS",
+        icon: <SiNestjs size={size} color={color} />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql size={size} color={color} />,
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Nest.JS & MySQL restAPI Template",
+    description:
+      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
+    github: "https://github.com/NicolasJott/nest-mysql-template",
+    tags: [
+      {
+        name: "NestJS",
+        icon: <SiNestjs size={size} color={color} />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql size={size} color={color} />,
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Nest.JS & MySQL restAPI Template",
+    description:
+      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
+    github: "https://github.com/NicolasJott/nest-mysql-template",
+    tags: [
+      {
+        name: "NestJS",
+        icon: <SiNestjs size={size} color={color} />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql size={size} color={color} />,
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Nest.JS & MySQL restAPI Template",
+    description:
+      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
     github: "https://github.com/NicolasJott/nest-mysql-template",
     tags: [
       {
@@ -98,17 +202,39 @@ export default function Home() {
         <Section delay={0.1}>
           <VStack>
             <Heading
-              textColor={"white"}
-              alignSelf="center"
-              justifySelf={"center"}
-              mb={20}
-              size={["md", "lg"]}
+              color="white.900"
+              textDecoration="underline"
+              textUnderlineOffset={5}
+              textDecorationColor="primary.900"
+              textDecorationThickness="4px"
+              mb={24}
+              size="xl"
             >
-              Nicolas Ott - Projects
+              Featured Projects
             </Heading>
-            {projects(16, "white").map((project, index) => (
-              <ProjectCard key={index} project={project} />
+            {featuredProjects(16, "white").map((project, index) => (
+              <FeaturedProjects key={index} project={project} />
             ))}
+          </VStack>
+        </Section>
+        <Section delay={0.2}>
+          <VStack>
+            <Heading
+              color="white.900"
+              textDecoration="underline"
+              textUnderlineOffset={5}
+              textDecorationColor="primary.900"
+              textDecorationThickness="4px"
+              mb={24}
+              size="xl"
+            >
+              Other Projects
+            </Heading>
+            <SimpleGrid columns={[1, 1, 1, 3, 3, 3, 3]} spacing={4} mb={24}>
+              {otherProjects(12, "white").map((project, index) => (
+                <OtherProjects key={index} project={project} />
+              ))}
+            </SimpleGrid>
           </VStack>
         </Section>
       </Container>
