@@ -114,82 +114,17 @@ const otherProjects = (size: number, color: string): OtherProject[] => [
     ],
   },
   {
-    name: "Nest.JS & MySQL restAPI Template",
-    description:
-      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
-    github: "https://github.com/NicolasJott/nest-mysql-template",
+    name: "Clash of Clans API Wrapper",
+    description: "A read-only wrapper for the Clash of Clans API",
+    github: "https://github.com/NicolasJott/ClashofClansJavaWrapper",
     tags: [
       {
-        name: "NestJS",
+        name: "Java",
         icon: <SiNestjs size={size} color={color} />,
       },
       {
-        name: "MySQL",
-        icon: <SiMysql size={size} color={color} />,
-      },
-      {
-        name: "Typescript",
-        icon: <SiTypescript size={size} color={color} />,
-      },
-    ],
-  },
-  {
-    name: "Nest.JS & MySQL restAPI Template",
-    description:
-      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
-    github: "https://github.com/NicolasJott/nest-mysql-template",
-    tags: [
-      {
-        name: "NestJS",
-        icon: <SiNestjs size={size} color={color} />,
-      },
-      {
-        name: "MySQL",
-        icon: <SiMysql size={size} color={color} />,
-      },
-      {
-        name: "Typescript",
-        icon: <SiTypescript size={size} color={color} />,
-      },
-    ],
-  },
-  {
-    name: "Nest.JS & MySQL restAPI Template",
-    description:
-      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
-    github: "https://github.com/NicolasJott/nest-mysql-template",
-    tags: [
-      {
-        name: "NestJS",
-        icon: <SiNestjs size={size} color={color} />,
-      },
-      {
-        name: "MySQL",
-        icon: <SiMysql size={size} color={color} />,
-      },
-      {
-        name: "Typescript",
-        icon: <SiTypescript size={size} color={color} />,
-      },
-    ],
-  },
-  {
-    name: "Nest.JS & MySQL restAPI Template",
-    description:
-      "🚀 This template should help get you started developing with NestJS, TypeORM + MySQL.",
-    github: "https://github.com/NicolasJott/nest-mysql-template",
-    tags: [
-      {
-        name: "NestJS",
-        icon: <SiNestjs size={size} color={color} />,
-      },
-      {
-        name: "MySQL",
-        icon: <SiMysql size={size} color={color} />,
-      },
-      {
-        name: "Typescript",
-        icon: <SiTypescript size={size} color={color} />,
+        name: "RestAPI",
+        icon: null,
       },
     ],
   },

@@ -18,7 +18,7 @@ export type OtherProject = {
   website?: string;
   tags: {
     name: string;
-    icon: ReactElement;
+    icon: ReactElement | null;
   }[];
 };
 
