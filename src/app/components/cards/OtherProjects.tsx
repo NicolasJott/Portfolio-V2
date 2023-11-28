@@ -1,3 +1,4 @@
+import { OtherProject } from "@/data/projectData";
 import {
   Box,
   HStack,
@@ -8,19 +9,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { ReactElement } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
-export type OtherProject = {
-  name: string;
-  description: string;
-  github?: string;
-  website?: string;
-  tags: {
-    name: string;
-    icon: ReactElement | null;
-  }[];
-};
 
 interface OtherProjectsProps {
   project: OtherProject;

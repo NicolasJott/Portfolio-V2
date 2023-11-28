@@ -1,3 +1,4 @@
+import { Project } from "@/data/projectData";
 import {
   Box,
   HStack,
@@ -12,22 +13,7 @@ import {
 } from "@chakra-ui/react";
 import * as CSS from "csstype";
 import Link from "next/link";
-import { ReactElement } from "react";
 import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
-
-export type Project = {
-  name: string;
-  img: string;
-  description: string;
-  primaryColor: string;
-  projectType: string;
-  github?: string;
-  website?: string;
-  tags: {
-    name: string;
-    icon: ReactElement;
-  }[];
-};
 
 interface ProjectCardProps {
   project: Project;
