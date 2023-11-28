@@ -1,6 +1,6 @@
 import Layout from "@/app/components/layout/Layout";
 import { Container, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
-import { FaReact } from "react-icons/fa";
+import { FaJava, FaReact } from "react-icons/fa";
 import {
   SiCss3,
   SiExpo,
@@ -120,7 +120,7 @@ const otherProjects = (size: number, color: string): OtherProject[] => [
     tags: [
       {
         name: "Java",
-        icon: <SiNestjs size={size} color={color} />,
+        icon: <FaJava size={size} color={color} />,
       },
       {
         name: "RestAPI",
