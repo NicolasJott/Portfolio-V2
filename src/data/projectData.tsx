@@ -12,6 +12,7 @@ import {
   SiNestjs,
   SiNodedotjs,
   SiTypescript,
+  SiVercel,
 } from "react-icons/si";
 
 export type Project = {
@@ -87,6 +88,30 @@ export const featuredProjects = (size: number, color: string): Project[] => [
       {
         name: "MongoDB",
         icon: <SiMongodb size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Water-Cooling Guide",
+    img: "images/watercooling.png",
+    description:
+      "A simple and fun drag and drop guide to learn how to build a custom water-cooling loop for the pc enthusiast.",
+    primaryColor: "rgb(249, 146, 68)",
+    projectType: "Personal Project",
+    github: "https://github.com/NicolasJott/watercooling-guide",
+    website: "https://watercool.nicolasjott.com/",
+    tags: [
+      {
+        name: "React",
+        icon: <FaReact size={size} color={color} />,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript size={size} color={color} />,
+      },
+      {
+        name: "Vercel",
+        icon: <SiVercel size={size} color={color} />,
       },
     ],
   },
