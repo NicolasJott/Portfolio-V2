@@ -3,8 +3,7 @@ import { LinkWithAnimation } from "./LinkWithAnimation";
 
 const Pages = [
   ["Projects", "/projects"],
-  ["Blog", "/blog"],
-  ["Resume", "/resume"],
+  ["Resume", "resume.pdf"],
 ];
 
 export const Header = () => {
