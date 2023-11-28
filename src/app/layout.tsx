@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ backgroundColor: "#2C2C2E" }}>
         <Providers>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main>{children}</Main>
