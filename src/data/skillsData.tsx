@@ -159,7 +159,7 @@ export const MobileIcons = (size: number, color: string) => [
   },
   {
     icon: <FaAndroid size={size} color={color} />,
-    name: "Expo",
+    name: "Android",
     backgroundColor: "#3DDC84",
   },
 ];
