@@ -88,7 +88,7 @@ export const FrontEndIcons = (size: number, color: string) => [
   },
   {
     icon: <SiChakraui size={size} color={color} />,
-    name: "HTML5",
+    name: "Chakra UI",
     backgroundColor: "#4FD1C5",
   },
 ];
