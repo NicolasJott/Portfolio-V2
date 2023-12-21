@@ -45,7 +45,7 @@ export const featuredProjects = (size: number, color: string): Project[] => [
     name: "Pave Routes",
     img: "images/pave.png",
     description:
-      "A running app that generates routes for you. The only user input required is distance, route shape, terrain, and elevation preferences.",
+      "Discover a new dimension of running with Pave Routes, the all-in-one app designed to revolutionize your running journey. Whether you're a seasoned athlete or just getting started on your running adventure, Pave Routes is your go-to companion for creating, tracking, and saving your running routes and workouts",
     primaryColor: "#0095B6",
     projectType: "@Dev Youngstown",
     website: "https://www.paveroutes.com/",
@@ -61,6 +61,29 @@ export const featuredProjects = (size: number, color: string): Project[] => [
       {
         name: "FastAPI",
         icon: <SiFastapi size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Fantasy Football Insights",
+    img: "images/ffi.png",
+    description:
+      "Fantasy Football Insights is an idea based largely on existing fantasy football apps such as ESPN Fantasy Football, Sleeper, and Yahoo! Fantasy Football, among others. The idea is to improve upon ideas from these existed applications to create the best possible fantasy football assistance software as well as help users win their leagues.",
+    primaryColor: "#EE0C0C",
+    projectType: "Personal Project",
+    github: "https://github.com/orgs/Fantasy-Football-Insights/repositories",
+    tags: [
+      {
+        name: "React Native",
+        icon: <FaReact size={size} color={color} />,
+      },
+      {
+        name: "Expo",
+        icon: <SiExpo size={size} color={color} />,
+      },
+      {
+        name: "NestJS",
+        icon: <SiNestjs size={size} color={color} />,
       },
     ],
   },
@@ -88,30 +111,6 @@ export const featuredProjects = (size: number, color: string): Project[] => [
       {
         name: "MongoDB",
         icon: <SiMongodb size={size} color={color} />,
-      },
-    ],
-  },
-  {
-    name: "Water-Cooling Guide",
-    img: "images/watercooling.png",
-    description:
-      "A simple and fun drag and drop guide to learn how to build a custom water-cooling loop for the pc enthusiast.",
-    primaryColor: "rgb(249, 146, 68)",
-    projectType: "Personal Project",
-    github: "https://github.com/NicolasJott/watercooling-guide",
-    website: "https://watercool.nicolasjott.com/",
-    tags: [
-      {
-        name: "React",
-        icon: <FaReact size={size} color={color} />,
-      },
-      {
-        name: "JavaScript",
-        icon: <SiJavascript size={size} color={color} />,
-      },
-      {
-        name: "Vercel",
-        icon: <SiVercel size={size} color={color} />,
       },
     ],
   },
@@ -155,6 +154,27 @@ export const otherProjects = (size: number, color: string): OtherProject[] => [
       {
         name: "CSS3",
         icon: <SiCss3 size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Water-Cooling Guide",
+    description:
+      "A simple and fun drag and drop guide to learn how to build a custom water-cooling loop for the pc enthusiast.",
+    github: "https://github.com/NicolasJott/watercooling-guide",
+    website: "https://watercool.nicolasjott.com/",
+    tags: [
+      {
+        name: "React",
+        icon: <FaReact size={size} color={color} />,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript size={size} color={color} />,
+      },
+      {
+        name: "Vercel",
+        icon: <SiVercel size={size} color={color} />,
       },
     ],
   },
