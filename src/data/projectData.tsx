@@ -25,7 +25,7 @@ export type Project = {
   website?: string;
   tags: {
     name: string;
-    icon: ReactElement;
+    icon: ReactElement | null;
   }[];
 };
 
@@ -88,29 +88,26 @@ export const featuredProjects = (size: number, color: string): Project[] => [
     ],
   },
   {
-    name: "Workout Tracker",
-    img: "images/workoutTracker.png",
+    name: "ASLingo",
+    img: "images/aslingo.jpg",
     description:
-      "Experience seamless tracking and effortless organization of your daily fitness regimen with our user-friendly workout logger. Effortlessly document and monitor your workouts, conveniently logging each exercise, set, and progress made.",
-    primaryColor: "#ff5047",
-    projectType: "Personal Project",
-    github: "https://github.com/NicolasJott/workoutTracker",
+      "ASLingo, the first-place winning project at Hack YSU 2023, showcases a unique blend of technologies. This project integrates machine learning in a FastAPI server to accurately detect if a user has signed the correct letter. Complementing the backend is a responsive React front end, ensuring a seamless user experience.",
+    primaryColor: "#289DFF",
+    projectType: "HackYSU 2023 1st Place Winner",
+    github: "https://github.com/nickgwinsen/hackysu",
+    website: "https://hackysu.com/",
     tags: [
       {
         name: "React",
         icon: <FaReact size={size} color={color} />,
       },
       {
-        name: "Express",
-        icon: <SiExpress size={size} color={color} />,
+        name: "FastAPI",
+        icon: <SiFastapi size={size} color={color} />,
       },
       {
-        name: "Node.JS",
-        icon: <SiNodedotjs size={size} color={color} />,
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb size={size} color={color} />,
+        name: "Machine Learning",
+        icon: null,
       },
     ],
   },
@@ -134,6 +131,30 @@ export const otherProjects = (size: number, color: string): OtherProject[] => [
       {
         name: "Typescript",
         icon: <SiTypescript size={size} color={color} />,
+      },
+    ],
+  },
+  {
+    name: "Workout Tracker",
+    description:
+      "Experience seamless tracking and effortless organization of your daily fitness regimen with this workout logger.",
+    github: "https://github.com/NicolasJott/workoutTracker",
+    tags: [
+      {
+        name: "React",
+        icon: <FaReact size={size} color={color} />,
+      },
+      {
+        name: "Express",
+        icon: <SiExpress size={size} color={color} />,
+      },
+      {
+        name: "Node.JS",
+        icon: <SiNodedotjs size={size} color={color} />,
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb size={size} color={color} />,
       },
     ],
   },

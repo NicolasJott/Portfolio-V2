@@ -22,7 +22,7 @@ interface ProjectCardProps {
 export const FeaturedProjects = ({ project }: ProjectCardProps) => {
   const textAlignConstants:
     | ResponsiveValue<CSS.Property.TextAlign>
-    | undefined = ["center", "center", "center", "center", "right"];
+    | undefined = ["center", "center", "center", "center", "left"];
   return (
     <Box w="100%" mb={[12, 24]}>
       <Stack
@@ -33,13 +33,14 @@ export const FeaturedProjects = ({ project }: ProjectCardProps) => {
         <Image
           src={project.img}
           alt="pave routes route"
-          maxWidth={["250px", "250px", "350px", "400px", "600px"]}
+          maxWidth={["250px", "250px", "350px", "400px", "500px"]}
           alignSelf={"center"}
+          borderRadius={"10px"}
         />
         <VStack
           spacing={8}
           alignItems={["center", "center", "center", "center", "flex-end"]}
-          w={["100%", "100%", "100%", "80%", "80%", "20%"]}
+          w={["100%", "100%", "100%", "80%", "80%", "30%"]}
         >
           <VStack
             alignItems={[
