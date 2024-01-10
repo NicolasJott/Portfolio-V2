@@ -3,6 +3,7 @@ export const colors = {
     900: "#007BFF",
     800: "#132942",
     700: "#1f446f",
+    300: "#4da3ff",
     200: "#90b5e0",
   },
   systemGrayLight: {

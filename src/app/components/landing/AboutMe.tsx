@@ -1,7 +1,9 @@
 import { aboutMeData } from "@/data/landingData";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 
 export const AboutMe = () => {
+  const descriptionParts = aboutMeData.description.split("Dev Youngstown");
+
   return (
     <Box my={24} p={4}>
       <Heading
@@ -16,7 +18,15 @@ export const AboutMe = () => {
         {aboutMeData.header}
       </Heading>
       <Text color="white.900" fontSize={18}>
-        {aboutMeData.description}
+        {descriptionParts[0]}
+        <Link
+          href="https://www.youngstown.dev/"
+          color={"#007BFF"}
+          _hover={{ color: "#4da3ff" }}
+        >
+          Dev Youngstown
+        </Link>
+        {descriptionParts[1]}
       </Text>
     </Box>
   );
