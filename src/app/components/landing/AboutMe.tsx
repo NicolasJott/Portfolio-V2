@@ -22,7 +22,7 @@ export const AboutMe = () => {
         <Link
           href="https://www.youngstown.dev/"
           color={"#007BFF"}
-          _hover={{ color: "#4da3ff" }}
+          _hover={{ color: "#4da3ff", cursor: "pointer" }}
         >
           Dev Youngstown
         </Link>
