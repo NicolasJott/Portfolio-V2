@@ -68,7 +68,7 @@ export const featuredProjects = (size: number, color: string): Project[] => [
     name: "Fantasy Football Insights",
     img: "images/ffi.png",
     description:
-      "Fantasy Football Insights is an idea based largely on existing fantasy football apps such as ESPN Fantasy Football, Sleeper, and Yahoo! Fantasy Football, among others. The idea is to improve upon ideas from these existed applications to create the best possible fantasy football assistance software as well as help users win their leagues.",
+      "Fantasy Football Insights is an idea based largely on existing fantasy football apps such as ESPN Fantasy Football, Sleeper, and Yahoo! Fantasy Football, among others. The idea is to improve upon ideas from these existing applications to create the best possible fantasy football assistance software as well as help users win their leagues.",
     primaryColor: "#EE0C0C",
     projectType: "Personal Project",
     github: "https://github.com/orgs/Fantasy-Football-Insights/repositories",

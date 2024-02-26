@@ -24,7 +24,7 @@ export const workExperience: WorkExperience = {
         "Developed a RESTful API using Fast API and PostgreSQL to compliment a React Native Expo mobile application that generates running routes for runners that I also helped develop.",
         "Improved route generation algorithm by more than 200% in terms of speed and accuracy.",
         "Developed a full-stack web application using Fast API, PostgreSQL, and Vite as an order management system, and admin dashboard for delivery orders.",
-        "Developed a Shopify app that utilizes Shopify's Parter API to store Shopify orders in a RESTful API to be fulfilled by drivers in a mobile application.",
+        "Developed a Shopify app that utilizes Shopify's Partner API to store Shopify orders in a RESTful API to be fulfilled by drivers in a mobile application.",
       ],
 
       img: "images/dev_ytown.png",
