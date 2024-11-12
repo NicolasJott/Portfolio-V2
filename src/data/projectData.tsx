@@ -8,6 +8,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiMongodb,
+  SiMui,
   SiMysql,
   SiNestjs,
   SiNodedotjs,
@@ -107,6 +108,30 @@ export const featuredProjects = (size: number, color: string): Project[] => [
       },
       {
         name: "Machine Learning",
+        icon: null,
+      },
+    ],
+  },
+  {
+    name: "React Hook Form Kit",
+    img: "images/rhf_kit.png",
+    description:
+      "A library of packages that provide a set of components and utilities to help you build forms with React Hook Form and popular UI libraries.",
+    primaryColor: "#031BAC",
+    projectType: "Open Source",
+    github: "https://github.com/dev-youngstown/rhf-kit",
+    website: "https://dev-youngstown.github.io/rhf-kit/",
+    tags: [
+      {
+        name: "React",
+        icon: <FaReact size={size} color={color} />,
+      },
+      {
+        name: "Material-UI",
+        icon: <SiMui size={size} color={color} />,
+      },
+      {
+        name: "React Hook Form",
         icon: null,
       },
     ],

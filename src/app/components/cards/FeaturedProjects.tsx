@@ -28,7 +28,9 @@ export const FeaturedProjects = ({ project }: ProjectCardProps) => {
       <Stack
         direction={["column", "column", "column", "row"]}
         spacing={12}
-        justifyContent={"center"}
+        justifyContent={"space-between"}
+        maxW={"6xl"}
+        mx={"auto"}
       >
         <Image
           src={project.img}
