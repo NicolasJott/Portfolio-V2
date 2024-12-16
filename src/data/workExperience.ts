@@ -15,7 +15,7 @@ type WorkExperience = {
 export const workExperience: WorkExperience = {
   header: "Work Experience",
   jobs: [
-     {
+    {
       title: "Full-stack Software Developer",
       company: "Open party Software",
       date: "May 2024 - Present",
@@ -46,7 +46,7 @@ export const workExperience: WorkExperience = {
     {
       title: "Software Developer",
       company: "Youngstown State University",
-      date: "December 2022 - Present",
+      date: "January 2023 - December 2024",
       url: "https://ysu.edu/",
       description: [
         "Contributed to a small team that completed 907 tickets within 8 months.",
