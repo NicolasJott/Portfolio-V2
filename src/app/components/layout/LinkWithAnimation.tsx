@@ -5,12 +5,14 @@ import { ReactNode, useState } from "react";
 
 export interface LinkWithAnimationProps {
   href: string;
+  target?: string;
   color: string;
   children: ReactNode;
 }
 
 export const LinkWithAnimation = ({
   href,
+  target,
   color,
   children,
 }: LinkWithAnimationProps) => {
@@ -40,7 +42,7 @@ export const LinkWithAnimation = ({
   };
 
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref target={target}>
       <Box
         color={color}
         style={linkStyle}
