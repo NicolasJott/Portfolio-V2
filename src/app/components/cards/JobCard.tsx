@@ -15,7 +15,9 @@ export const JobCard = ({ title, company, url, description }: JobCardProps) => {
         {title}
       </Heading>
       <Heading as={"h4"} size={"md"} color="systemGrayLight.500">
-        <Link href={url}>{company}</Link>
+        <Link href={url} target="_blank">
+          {company}
+        </Link>
       </Heading>{" "}
       {description.map((p, index) => (
         <Text key={index}>- {p}</Text>

@@ -48,12 +48,12 @@ export const OtherProjects = ({ project }: OtherProjectsProps) => {
             mb={2}
           >
             {project.github && (
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank">
                 <FaGithub color={"white"} size={24} />
               </Link>
             )}
             {project.website && (
-              <Link href={project.website}>
+              <Link href={project.website} target="_blank">
                 <FaExternalLinkAlt color={"white"} size={24} />
               </Link>
             )}

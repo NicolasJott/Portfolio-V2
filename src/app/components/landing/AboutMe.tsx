@@ -2,7 +2,7 @@ import { aboutMeData } from "@/data/landingData";
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
 
 export const AboutMe = () => {
-  const descriptionParts = aboutMeData.description.split("Dev Youngstown");
+  const descriptionParts = aboutMeData.description.split("InsureScope");
 
   return (
     <Box my={24} p={4}>
@@ -20,11 +20,12 @@ export const AboutMe = () => {
       <Text color="white.900" fontSize={18}>
         {descriptionParts[0]}
         <Link
-          href="https://www.youngstown.dev/"
+          href="https://www.insurescope.ai/"
           color={"#007BFF"}
           _hover={{ color: "#4da3ff", cursor: "pointer" }}
+          target="_blank"
         >
-          Dev Youngstown
+          InsureScope
         </Link>
         {descriptionParts[1]}
       </Text>

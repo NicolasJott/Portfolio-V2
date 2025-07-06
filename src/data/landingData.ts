@@ -2,10 +2,10 @@ export const landingData = {
   header1: "Hi, I'm",
   header2: " Nicolas Ott",
   typeWriterText: ["Full Stack Engineer", "Student"],
-  description: `I am currently a SWE Intern at <a></a>Dev Youngstown where I develop MVPs for startup companies. I am currently a junior at Youngstown State University studying Computer Science.`,
+  description: `I'm a Software Engineer at <a></a>InsureScope where I get to work with some really cool AI tech every day. Just graduated from Youngstown State University with my Computer Science degree!`,
 };
 
 export const aboutMeData = {
   header: "About Me",
-  description: `I am currently a Software Engineer Intern at Dev Youngstown where I develop MVPs for startup companies. I am currently a senior at Youngstown State University pursuing a Bachelor's degree in Computer Science. I possess a strong passion for the development of web applications and the satisfaction that comes with witnessing their successful deployment. My inclination towards software engineering has been fostered by my father, who is an accomplished full stack engineer. Witnessing the innovative projects he created during my formative years instilled in me an unwavering interest in pursuing a similar career path`,
+  description: `I'm currently working as a Software Engineer at InsureScope, where I get to dive into the latest AI technologies and build some pretty exciting stuff for the insurance world. I just finished up my Computer Science degree at Youngstown State University, and honestly, I'm loving every minute of this journey. I've always been passionate about building web apps and now AI-powered solutions too - there's something incredibly satisfying about seeing your code come to life and actually help people. Growing up, my dad (who's a full stack engineer) was always working on these amazing projects, and watching him sparked my love for software engineering. Now I'm getting to explore the wild world of AI and machine learning, and it feels like I'm just getting started!`,
 };

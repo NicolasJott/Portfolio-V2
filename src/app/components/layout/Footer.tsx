@@ -3,14 +3,14 @@
 import {
   Box,
   chakra,
-  Container, Link,
-  Stack,
+  Link,
   Text,
   useColorModeValue,
-  VisuallyHidden, VStack,
+  VisuallyHidden,
+  VStack,
 } from "@chakra-ui/react";
-import { FaCodeBranch } from "react-icons/fa6";
 import { ReactNode } from "react";
+import { FaCodeBranch } from "react-icons/fa6";
 
 const SocialButton = ({
   children,
@@ -51,8 +51,11 @@ export default function Footer() {
         <Text fontSize={16} textColor={"white"}>
           © Nicolas Ott {new Date().getFullYear()}
         </Text>
-        <Link href={"https://github.com/NicolasJott/Portfolio-V2"}>
-        <FaCodeBranch size={16} color={"white"}/>
+        <Link
+          href={"https://github.com/NicolasJott/Portfolio-V2"}
+          target="_blank"
+        >
+          <FaCodeBranch size={16} color={"white"} />
         </Link>
       </VStack>
     </Box>

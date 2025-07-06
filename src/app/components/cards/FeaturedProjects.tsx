@@ -105,12 +105,12 @@ export const FeaturedProjects = ({ project }: ProjectCardProps) => {
           </HStack>
           <HStack>
             {project.github && (
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank">
                 <FaGithubSquare size={36} color={"white"} />
               </Link>
             )}
             {project.website && (
-              <Link href={project.website}>
+              <Link href={project.website} target="_blank">
                 <FaExternalLinkAlt size={28} color={"white"} />
               </Link>
             )}

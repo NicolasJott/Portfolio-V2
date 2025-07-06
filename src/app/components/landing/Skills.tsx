@@ -21,8 +21,8 @@ export const Skills = () => {
       >
         My Skills
       </Heading>
-      <VStack my={12} alignItems={"flex-end"} spacing={12}>
-        <VStack alignItems={"flex-end"}>
+      <VStack my={12} alignItems={"center"} spacing={12}>
+        <VStack alignItems={"center"}>
           <Heading color="white.900" mb={4} size="xl">
             Languages
           </Heading>
@@ -47,7 +47,7 @@ export const Skills = () => {
           </HStack>
         </VStack>
 
-        <VStack alignItems={"flex-end"}>
+        <VStack alignItems={"center"}>
           <Heading color="white.900" mb={4} size="xl">
             Frontend
           </Heading>
@@ -72,7 +72,7 @@ export const Skills = () => {
           </HStack>
         </VStack>
 
-        <VStack alignItems={"flex-end"}>
+        <VStack alignItems={"center"}>
           <Heading color="white.900" mb={4} size="xl">
             Backend & DevOps
           </Heading>
@@ -97,7 +97,7 @@ export const Skills = () => {
           </HStack>
         </VStack>
 
-        <VStack alignItems={"flex-end"}>
+        <VStack alignItems={"center"}>
           <Heading color="white.900" mb={4} size="xl">
             Mobile
           </Heading>

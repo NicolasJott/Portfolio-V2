@@ -16,22 +16,21 @@ export const workExperience: WorkExperience = {
   header: "Work Experience",
   jobs: [
     {
-      title: "Full-stack Software Developer",
-      company: "Open party Software",
-      date: "May 2024 - Present",
-      url: "https://www.openpartysoftware.com/",
+      title: "Full Stack Engineer",
+      company: "InsureScope",
+      date: "October 2024 - Present",
+      url: "https://www.insurescope.ai/",
       description: [
-        "Responsible for separating Angular applications into smaller applications (Admin, Customer, Integration).",
-        "Developed a task scheduler service (NestJS) to manage customer participation and payment.",
-        "Wrote documentation submitted to patent laying out the methodology of an important feature in the application.",
+        "Built a SaaS platform from the ground up to analyze and compare legal contracts using AI.",
+        "Responsible for the full development lifecycle—from backend architecture to frontend implementation.",
       ],
 
-      img: "images/ops.png",
+      img: "images/insurescope_logo.jpeg",
     },
     {
       title: "Software Developer",
       company: "Dev Youngstown",
-      date: "May 2023 - Present",
+      date: "May 2023 - May 2025",
       url: "https://www.youngstown.dev/",
       description: [
         "Responsible for developing MVPs (Minimum Viable Products) in an agile, remote work environment:",
@@ -59,7 +58,7 @@ export const workExperience: WorkExperience = {
       title: "Advanced Repair Agent",
       company: "Geek Squad",
       date: "May 2022 - December 2022",
-      url: "https://www.bestbuy.com/site/services/geek-squad/pcmcat138100050018.c?id=pcmcat138100050018&PSRCH",
+      url: "https://www.bestbuy.com",
       description: [
         "Certified by Apple to diagnose and repair devices and stay up to date with the latest technology.",
         "Responsible for troubleshooting issues and repairing client devices on the OS And hardware level.",
